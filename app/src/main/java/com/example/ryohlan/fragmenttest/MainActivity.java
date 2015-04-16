@@ -149,7 +149,7 @@ public class MainActivity extends ActionBarActivity {
             t.setText(getClass().getSimpleName() + " " + fragmentNumber);
             String m = getClass().getSimpleName() + Thread.currentThread().getStackTrace()[2].getMethodName() + " " + fragmentNumber;
             Log.e("", m);
-            ((MainActivity) getActivity()).addLog(m);
+            ((MainActivity) getActivity()).addLog("Fragment " + fragmentNumber + " : " + Thread.currentThread().getStackTrace()[2].getMethodName());
             return rootView;
         }
 
@@ -158,7 +158,7 @@ public class MainActivity extends ActionBarActivity {
             super.onActivityCreated(savedInstanceState);
             String m = getClass().getSimpleName() + Thread.currentThread().getStackTrace()[2].getMethodName() + " " + fragmentNumber;
             Log.e("", m);
-            ((MainActivity) getActivity()).addLog(m);
+            ((MainActivity) getActivity()).addLog("Fragment " + fragmentNumber + " : " + Thread.currentThread().getStackTrace()[2].getMethodName());
         }
 
         @Override
@@ -166,7 +166,7 @@ public class MainActivity extends ActionBarActivity {
             super.onActivityResult(requestCode, resultCode, data);
             String m = getClass().getSimpleName() + Thread.currentThread().getStackTrace()[2].getMethodName() + " " + fragmentNumber;
             Log.e("", m);
-            ((MainActivity) getActivity()).addLog(m);
+            ((MainActivity) getActivity()).addLog("Fragment " + fragmentNumber + " : " + Thread.currentThread().getStackTrace()[2].getMethodName());
         }
 
         @Override
@@ -175,7 +175,7 @@ public class MainActivity extends ActionBarActivity {
             fragmentNumber = getArguments().getInt("n");
             String m = getClass().getSimpleName() + Thread.currentThread().getStackTrace()[2].getMethodName() + " " + fragmentNumber;
             Log.e("", m);
-            ((MainActivity) getActivity()).addLog(m);
+            ((MainActivity) getActivity()).addLog("Fragment " + fragmentNumber + " : " + Thread.currentThread().getStackTrace()[2].getMethodName());
         }
 
         @Override
@@ -183,14 +183,14 @@ public class MainActivity extends ActionBarActivity {
             super.onConfigurationChanged(newConfig);
             String m = getClass().getSimpleName() + Thread.currentThread().getStackTrace()[2].getMethodName() + " " + fragmentNumber;
             Log.e("", m);
-            ((MainActivity) getActivity()).addLog(m);
+            ((MainActivity) getActivity()).addLog("Fragment " + fragmentNumber + " : " + Thread.currentThread().getStackTrace()[2].getMethodName());
         }
 
         @Override
         public boolean onContextItemSelected(MenuItem item) {
             String m = getClass().getSimpleName() + Thread.currentThread().getStackTrace()[2].getMethodName() + " " + fragmentNumber;
             Log.e("", m);
-            ((MainActivity) getActivity()).addLog(m);
+            ((MainActivity) getActivity()).addLog("Fragment " + fragmentNumber + " : " + Thread.currentThread().getStackTrace()[2].getMethodName());
             return super.onContextItemSelected(item);
         }
 
@@ -199,14 +199,14 @@ public class MainActivity extends ActionBarActivity {
             super.onCreate(savedInstanceState);
             String m = getClass().getSimpleName() + Thread.currentThread().getStackTrace()[2].getMethodName() + " " + fragmentNumber;
             Log.e("", m);
-            ((MainActivity) getActivity()).addLog(m);
+            ((MainActivity) getActivity()).addLog("Fragment " + fragmentNumber + " : " + Thread.currentThread().getStackTrace()[2].getMethodName());
         }
 
         @Override
         public Animation onCreateAnimation(int transit, boolean enter, int nextAnim) {
             String m = getClass().getSimpleName() + Thread.currentThread().getStackTrace()[2].getMethodName() + " " + fragmentNumber;
             Log.e("", m);
-            ((MainActivity) getActivity()).addLog(m);
+            ((MainActivity) getActivity()).addLog("Fragment " + fragmentNumber + " : " + Thread.currentThread().getStackTrace()[2].getMethodName());
             return super.onCreateAnimation(transit, enter, nextAnim);
         }
 
@@ -215,7 +215,7 @@ public class MainActivity extends ActionBarActivity {
             super.onCreateContextMenu(menu, v, menuInfo);
             String m = getClass().getSimpleName() + Thread.currentThread().getStackTrace()[2].getMethodName() + " " + fragmentNumber;
             Log.e("", m);
-            ((MainActivity) getActivity()).addLog(m);
+            ((MainActivity) getActivity()).addLog("Fragment " + fragmentNumber + " : " + Thread.currentThread().getStackTrace()[2].getMethodName());
         }
 
         @Override
@@ -223,7 +223,7 @@ public class MainActivity extends ActionBarActivity {
             super.onCreateOptionsMenu(menu, inflater);
             String m = getClass().getSimpleName() + Thread.currentThread().getStackTrace()[2].getMethodName() + " " + fragmentNumber;
             Log.e("", m);
-            ((MainActivity) getActivity()).addLog(m);
+            ((MainActivity) getActivity()).addLog("Fragment " + fragmentNumber + " : " + Thread.currentThread().getStackTrace()[2].getMethodName());
         }
 
         @Override
@@ -231,7 +231,7 @@ public class MainActivity extends ActionBarActivity {
             super.onDestroy();
             String m = getClass().getSimpleName() + Thread.currentThread().getStackTrace()[2].getMethodName() + " " + fragmentNumber;
             Log.e("", m);
-            ((MainActivity) getActivity()).addLog(m);
+            ((MainActivity) getActivity()).addLog("Fragment " + fragmentNumber + " : " + Thread.currentThread().getStackTrace()[2].getMethodName());
         }
 
         @Override
@@ -239,7 +239,7 @@ public class MainActivity extends ActionBarActivity {
             super.onDestroyOptionsMenu();
             String m = getClass().getSimpleName() + Thread.currentThread().getStackTrace()[2].getMethodName() + " " + fragmentNumber;
             Log.e("", m);
-            ((MainActivity) getActivity()).addLog(m);
+            ((MainActivity) getActivity()).addLog("Fragment " + fragmentNumber + " : " + Thread.currentThread().getStackTrace()[2].getMethodName());
         }
 
         @Override
@@ -247,7 +247,7 @@ public class MainActivity extends ActionBarActivity {
             super.onDestroyView();
             String m = getClass().getSimpleName() + Thread.currentThread().getStackTrace()[2].getMethodName() + " " + fragmentNumber;
             Log.e("", m);
-            ((MainActivity) getActivity()).addLog(m);
+            ((MainActivity) getActivity()).addLog("Fragment " + fragmentNumber + " : " + Thread.currentThread().getStackTrace()[2].getMethodName());
         }
 
         @Override
@@ -255,7 +255,7 @@ public class MainActivity extends ActionBarActivity {
             super.onDetach();
             String m = getClass().getSimpleName() + Thread.currentThread().getStackTrace()[2].getMethodName() + " " + fragmentNumber;
             Log.e("", m);
-            ((MainActivity) getActivity()).addLog(m);
+            ((MainActivity) getActivity()).addLog("Fragment " + fragmentNumber + " : " + Thread.currentThread().getStackTrace()[2].getMethodName());
             ((MainActivity) getActivity()).deletedFragment();
         }
 
@@ -264,7 +264,7 @@ public class MainActivity extends ActionBarActivity {
             super.onHiddenChanged(hidden);
             String m = getClass().getSimpleName() + Thread.currentThread().getStackTrace()[2].getMethodName() + " " + fragmentNumber;
             Log.e("", m);
-            ((MainActivity) getActivity()).addLog(m);
+            ((MainActivity) getActivity()).addLog("Fragment " + fragmentNumber + " : " + Thread.currentThread().getStackTrace()[2].getMethodName());
         }
 
         @Override
@@ -272,7 +272,7 @@ public class MainActivity extends ActionBarActivity {
             super.onInflate(activity, attrs, savedInstanceState);
             String m = getClass().getSimpleName() + Thread.currentThread().getStackTrace()[2].getMethodName() + " " + fragmentNumber;
             Log.e("", m);
-            ((MainActivity) getActivity()).addLog(m);
+            ((MainActivity) getActivity()).addLog("Fragment " + fragmentNumber + " : " + Thread.currentThread().getStackTrace()[2].getMethodName());
         }
 
         @Override
@@ -280,14 +280,14 @@ public class MainActivity extends ActionBarActivity {
             super.onLowMemory();
             String m = getClass().getSimpleName() + Thread.currentThread().getStackTrace()[2].getMethodName() + " " + fragmentNumber;
             Log.e("", m);
-            ((MainActivity) getActivity()).addLog(m);
+            ((MainActivity) getActivity()).addLog("Fragment " + fragmentNumber + " : " + Thread.currentThread().getStackTrace()[2].getMethodName());
         }
 
         @Override
         public boolean onOptionsItemSelected(MenuItem item) {
             String m = getClass().getSimpleName() + Thread.currentThread().getStackTrace()[2].getMethodName() + " " + fragmentNumber;
             Log.e("", m);
-            ((MainActivity) getActivity()).addLog(m);
+            ((MainActivity) getActivity()).addLog("Fragment " + fragmentNumber + " : " + Thread.currentThread().getStackTrace()[2].getMethodName());
             return super.onOptionsItemSelected(item);
         }
 
@@ -296,7 +296,7 @@ public class MainActivity extends ActionBarActivity {
             super.onOptionsMenuClosed(menu);
             String m = getClass().getSimpleName() + Thread.currentThread().getStackTrace()[2].getMethodName() + " " + fragmentNumber;
             Log.e("", m);
-            ((MainActivity) getActivity()).addLog(m);
+            ((MainActivity) getActivity()).addLog("Fragment " + fragmentNumber + " : " + Thread.currentThread().getStackTrace()[2].getMethodName());
         }
 
         @Override
@@ -304,7 +304,7 @@ public class MainActivity extends ActionBarActivity {
             super.onPause();
             String m = getClass().getSimpleName() + Thread.currentThread().getStackTrace()[2].getMethodName() + " " + fragmentNumber;
             Log.e("", m);
-            ((MainActivity) getActivity()).addLog(m);
+            ((MainActivity) getActivity()).addLog("Fragment " + fragmentNumber + " : " + Thread.currentThread().getStackTrace()[2].getMethodName());
         }
 
         @Override
@@ -312,7 +312,7 @@ public class MainActivity extends ActionBarActivity {
             super.onPrepareOptionsMenu(menu);
             String m = getClass().getSimpleName() + Thread.currentThread().getStackTrace()[2].getMethodName() + " " + fragmentNumber;
             Log.e("", m);
-            ((MainActivity) getActivity()).addLog(m);
+            ((MainActivity) getActivity()).addLog("Fragment " + fragmentNumber + " : " + Thread.currentThread().getStackTrace()[2].getMethodName());
         }
 
         @Override
@@ -320,7 +320,7 @@ public class MainActivity extends ActionBarActivity {
             super.onResume();
             String m = getClass().getSimpleName() + Thread.currentThread().getStackTrace()[2].getMethodName() + " " + fragmentNumber;
             Log.e("", m);
-            ((MainActivity) getActivity()).addLog(m);
+            ((MainActivity) getActivity()).addLog("Fragment " + fragmentNumber + " : " + Thread.currentThread().getStackTrace()[2].getMethodName());
         }
 
         @Override
@@ -328,7 +328,7 @@ public class MainActivity extends ActionBarActivity {
             super.onSaveInstanceState(outState);
             String m = getClass().getSimpleName() + Thread.currentThread().getStackTrace()[2].getMethodName() + " " + fragmentNumber;
             Log.e("", m);
-            ((MainActivity) getActivity()).addLog(m);
+            ((MainActivity) getActivity()).addLog("Fragment " + fragmentNumber + " : " + Thread.currentThread().getStackTrace()[2].getMethodName());
         }
 
         @Override
@@ -336,7 +336,7 @@ public class MainActivity extends ActionBarActivity {
             super.onStart();
             String m = getClass().getSimpleName() + Thread.currentThread().getStackTrace()[2].getMethodName() + " " + fragmentNumber;
             Log.e("", m);
-            ((MainActivity) getActivity()).addLog(m);
+            ((MainActivity) getActivity()).addLog("Fragment " + fragmentNumber + " : " + Thread.currentThread().getStackTrace()[2].getMethodName());
         }
 
         @Override
@@ -344,7 +344,7 @@ public class MainActivity extends ActionBarActivity {
             super.onStop();
             String m = getClass().getSimpleName() + Thread.currentThread().getStackTrace()[2].getMethodName() + " " + fragmentNumber;
             Log.e("", m);
-            ((MainActivity) getActivity()).addLog(m);
+            ((MainActivity) getActivity()).addLog("Fragment " + fragmentNumber + " : " + Thread.currentThread().getStackTrace()[2].getMethodName());
         }
 
     }

@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="MergeRootFrame"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/replace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="replace" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/container" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="5dp"
+        android:background="#ccc">
+
+        <ListView
+            android:background="#FFF"
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:padding="0dp"
+            android:minHeight="0dp"
+            android:text="clear"
+            android:textSize="12sp"
+            android:layout_gravity="top|right" />
+    </FrameLayout>
+</LinearLayout>
